@@ -4,6 +4,7 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     basic.showString("" + year + "/" + month + "/" + day)
 })
+// set start date and time as midnight on 1/1/2021
 let minutes = 0
 let hours = 0
 let seconds = 0
@@ -16,6 +17,7 @@ day = 1
 seconds = 0
 hours = 0
 minutes = 0
+// the pause is missing to demonstrate incrementing through the time
 basic.forever(function () {
     seconds += 1
     if (seconds > 59) {
